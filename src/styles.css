@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-240px);
+  }
+}
+
+.animate{
+  animation: scroll 11.15s linear;
+}
+
+.shadow-custom:focus {
+  box-shadow: #0858F730 0px 1px 4px,#0858F730 0px 0px 0px 4px;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+.fade-in{
+  animation: fade-in 1000ms ease-in-out ;
+}
+
+.fade-out{
+  animation: fade-out 1000ms ease-in-out ;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@keyframes screenCenter {
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(50vw,50vh);
+  }
+}
+
+.animate-center{
+  animation: screenCenter 1s linear ;
+}
